@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
+    <title>businessPlanner - Welcome</title>
+</head>
+<body>
+    <header class="hero is-small is-info">
+        <div class="hero-body container">
+        <p class="subtitle">
+            Welcome to
+        </p>
+        <p class="title">
+            businessPlanner
+        </p>
+        </div>
+    </header>
+    
+    <main class="columns mt-3 mx-3 is-justify-content-center">
+    <div class="welcome-wrapper">
+        <div class="column is-one-fifth"></div>
+        <div id="intro-paragraph" class="content column is-medium is-two-fifths">
+            Here is some sample text to further welcome visitors 
+            to businessPlanner.  This can highlight certain features, 
+            or give the latest news and updates!
+        </div>
+        <form id = "sign-in-form" class="box column is-one-fifth">
+            <div class="field">
+              <label class="label">Username</label>
+              <div class="control">
+                <input class="input" placeholder="username">
+              </div>
+            </div>  
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control">
+                <input class="input" type="password" placeholder="********">
+              </div>
+            </div>
+            <button id="sign-in-button" class="button is-info">Sign in</button>
+        </form>
+        <div class="column is-one-fifth"></div>
+    </div>
+    <div class="calendar-wrapper container">
+      <div id="stock-prices" class="columns">
+        <div id="stock1" class="column"></div>
+        <div id="stock2" class="column"></div>
+        <div id="stock3" class="column"></div>
+      </div>
+      <div id="calendar" class="is-invisible">
+      </div>
+    </div>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Event Information</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <p>
+                Event Name:
+                <input id="user-title" type="text">
+            </p>
+            <p>
+                Event Date (YYYY-MM-DD):
+                <input id="date-select" type="text">
+            </p>
+            <p>
+                Event Time (T00:00:00):
+                <input id="time-select" type="text">
+            </p>
+          </section>
+          <footer class="modal-card-foot">
+            <button id='save-changes' class="button is-success">Save changes</button>
+            <button class="button">Cancel</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="has-text-centered">©️2022 Bryant Fowler, Andrew Freeman, Corey Fuller and Joe Gallina</div>
+    </footer>
+    <script src='https://cdn.jsdelivr.net/npm/moment@2.27.0/min/moment.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/javascript/logic.js"></script>
+</body>
+</html>
